@@ -1,6 +1,15 @@
-// template_v3s8biw
-// service_d58zbpd
-// yow_UxsncYermvRep
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
 function contact(event) {
   event.preventDefault();
@@ -24,4 +33,13 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contact me directly at breven.stars@gmail.com"
       );
     });
+}
+
+function toggleModal() {
+  if (isModalOpen) {
+    isModalOpen = false
+    return document.body.classList.remove("modal--open");
+  }
+  isModalOpen = true;
+  document.body.classList += " modal--open";
 }
