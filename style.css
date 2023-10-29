@@ -11,10 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
-#personal__logo {
-  width: 50px;
-  height: 50px;
-  filter: invert();
+.logo {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 li {
@@ -166,9 +166,10 @@ nav,
   background-color: #242424;
 }
 
-.dark-theme #personal__logo {
-  filter: none;
+.dark-theme .logo {
+  color: white;
 }
+
 
 .dark-theme .scroll__icon {
   border-color: white;
@@ -205,6 +206,7 @@ LANDING PAGE
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+  z-index: 10;
 }
 
 .header__para {
@@ -612,8 +614,10 @@ footer {
   align-items: center;
 }
 
-.footer__logo--img {
-  width: 70px;
+.footer__logo {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .footer__social--list {
