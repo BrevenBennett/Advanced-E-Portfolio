@@ -687,6 +687,10 @@ SHAPES
   .header__para {
     font-size: 18px;
   }
+
+  .row {
+    padding: 0 75px;
+  }
 }
 
 @media (max-height: 580px) {
@@ -759,6 +763,10 @@ SHAPES
 }
 
 @media (max-width: 480px) {
+  .row {
+    padding: 0 50px;
+  }
+
   .nav__link:first-child {
     display: none;
   }
@@ -780,5 +788,14 @@ SHAPES
 
   .modal__half {
     padding: 40px;
+  }
+
+  .modal__exit {
+    top: 15px;
+    right: 15px;
+  }
+
+  .form__submit {
+    max-width: 500px;
   }
 }
