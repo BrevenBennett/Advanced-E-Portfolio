@@ -759,11 +759,15 @@ SHAPES
     width: 80%;
     flex-direction: column-reverse;
     align-items: center;
-    border-radius: 5px;
+    /* border-radius: 5px; */
   }
 
   .modal__half {
     width: 100%;
+  }
+
+  .modal__para {
+    font-size: 14px;
   }
 }
 
